@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS测试</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    Hello World!!!
+    <hr/>
+    <div>
+        <div id="btn">
+            <a data-key="v1">模块一</a> <br/><br/>
+            <a data-key="v2">模块二</a> <br/><br/>
+            <a data-key="v3">模块三</a> <br/><br/>
+        </div>
+    </div>
+    <script>
+        function getDate(){
+            var date = new Date;
+            return "" +  date.getFullYear() + date.getMonth() + date.getDate()
+        }
+
+        document.querySelector('#btn').addEventListener('click',function(e){
+            var key = e.target.dataset.key;
+            if(key){
+                localStorage.pageRefer = JSON.stringify({
+                    key:key,
+                    date:getDate()
+                });
+                location.pathname = "../" + key + '.html';
+            }
+        })
+    </script>
+</body>
+</html>
