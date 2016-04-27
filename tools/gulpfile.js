@@ -62,6 +62,42 @@ function makeWatchTaskOfJs() {
     });
 }
 
+gulp.task('build', function () {
+    var tasks = [], curTarPath;
+    versions.forEach(function (v) {
+        var indexJsSrcs = getIndexJsPath(v);
+        curTarPath = targetPath + v + '/';
+        // html
+        tasks.concat(gulp.src(sourcePath + v + '.html').pipe(gulp.dest(curTarPath)));
+        // img
+        tasks.concat(gulp.src(watchPath_img + '*.*').pipe(gulp.dest(curTarPath + 'img/')));
+        // css
+        tasks.concat(gulp.src(watchPath_css + '*.css').pipe(gulp.dest(curTarPath + 'css/')));
+        // index.v.js
+        tasks.concat(gulp.src(indexJsSrcs)
+                .pipe(concat('index.' + v + '.source.js'))
+                .pipe(gulp.dest(curTarPath + 'js/'))
+                .pipe(uglify())
+                .pipe(rename('index.' + v + '.js'))
+                .pipe(gulp.dest(curTarPath + 'js/pack/'))
+        );
+        // view.v.js
+        tasks.concat(gulp.src(watchPath_view + v + '/*.html')
+                .pipe(views({moduleName: "ngTemplates", standalone: true}))
+                .pipe(concat('view.' + v + '.js'))
+                .pipe(uglify())
+                .pipe(gulp.dest(curTarPath + 'js/pack/'))
+        );
+        // lib.js
+        tasks.concat(gulp.src(libJsSrc)
+            .pipe(concat('lib.js'))
+            .pipe(gulp.dest(curTarPath + 'js/')));
+        // index.html
+        tasks.concat(gulp.src(sourcePath + 'index.html')
+            .pipe(gulp.dest(targetPath)));
+    });
+    return tasks;
+});
 
 // watch
 gulp.task('watch', function () {
@@ -87,8 +123,8 @@ gulp.task('watch', function () {
 });
 
 // 一定要包含默认
-gulp.task('default', function(){
-    switch (argv.type){
+gulp.task('default', function () {
+    switch (argv.type) {
         case 'watch':
             makeWatchTaskOfJs();
             gulp.start('watch');
