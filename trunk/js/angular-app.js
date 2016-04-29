@@ -53,10 +53,26 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('house-dict.dict.community.list1', {
-            url: '/list1',
-            data: { pageTitle: 'Email Inbox v1' },
-            templateUrl: 'views/email_inbox.html'
+        .state('house-dict.dict.community.list', {
+            url: '/list',
+            data: { pageTitle: '小区列表' },
+            templateUrl: 'views/community/list.html',
+            resolve: {
+                service: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        serie: true,
+                        files: [
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Select/css/select.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Select/js/dataTables.select.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                        ]
+                    });
+                }]
+            }
         })
         .state('house-dict.dict.community.list2', {
             url: '/list2',
