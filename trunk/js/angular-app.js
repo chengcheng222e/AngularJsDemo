@@ -311,6 +311,11 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
             template: '<div ui-view></div>',
             abstract: true
         })
+        .state('house-dict.table.v2', {
+            url: '/v2',
+            data: { pageTitle: 'Basic Table' },
+            templateUrl: 'views/index_v2.html'
+        })
         .state('house-dict.table.basic', {
             url: '/basic',
             data: { pageTitle: 'Basic Table' },
