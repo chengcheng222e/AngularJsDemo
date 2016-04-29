@@ -17,46 +17,32 @@
         <!-- end sidebar user -->
         <!-- begin sidebar nav -->
         <ul class="nav">
-            <li class="has-sub" ng-class="{active:$state.includes('house-dict.dashboard')}">
+            <li class="has-sub">
                 <a href="javascript:;">
                     <span>导航栏</span>
                 </a>
             </li>
 
-            <li class="has-sub" ng-class="{active:$state.includes('house-dict.table')}">
+            <li class="has-sub" ng-class="{active:$state.includes('house-dict.dict')}">
                 <a href="javascript:;">
                     <b class="caret pull-right"></b>
                     <i class="fa fa-th"></i>
                     <span>楼盘字典  </span>
                 </a>
                 <ul class="sub-menu">
-                    <li ui-sref-active="active"><a ui-sref="house-dict.table.v2">全国概况</a></li>
-                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.table.manage')}">
+                    <li ui-sref-active="active"><a ui-sref="house-dict.dict.dashboard.v2">全国概况</a></li>
+                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.dict.community')}">
                         <a href="javascript:;"><b class="caret pull-right"></b> 小区</a>
                         <ul class="sub-menu">
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.default">Default</a></li>
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.autofill">Autofill</a></li>
+                            <li ui-sref-active="active"><a ui-sref="house-dict.dict.community.list1">list1</a></li>
+                            <li ui-sref-active="active"><a ui-sref="house-dict.dict.community.list2">list2</a></li>
                         </ul>
                     </li>
-                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.table.manage')}">
+                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.dict.building')}">
                         <a href="javascript:;"><b class="caret pull-right"></b> 楼栋</a>
                         <ul class="sub-menu">
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.default">Default</a></li>
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.autofill">Autofill</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.table.manage')}">
-                        <a href="javascript:;"><b class="caret pull-right"></b> 单元</a>
-                        <ul class="sub-menu">
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.default">Default</a></li>
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.autofill">Autofill</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-sub" ng-class="{active:$state.includes('house-dict.table.manage')}">
-                        <a href="javascript:;"><b class="caret pull-right"></b> 房间</a>
-                        <ul class="sub-menu">
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.default">Default</a></li>
-                            <li ui-sref-active="active"><a ui-sref="house-dict.table.manage.autofill">Autofill</a></li>
+                            <li ui-sref-active="active"><a ui-sref="house-dict.dict.building.list1">list1</a></li>
+                            <li ui-sref-active="active"><a ui-sref="house-dict.dict.building.list2">list2</a></li>
                         </ul>
                     </li>
                 </ul>

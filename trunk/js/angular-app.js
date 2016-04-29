@@ -12,7 +12,7 @@ var colorAdminApp = angular.module('colorAdminApp', [
 ]);
 
 colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/house-dict/dashboard/v2');
+    $urlRouterProvider.otherwise('/house-dict/dict/dashboard');
 
     $stateProvider
         .state('house-dict', {
@@ -20,40 +20,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
             templateUrl: 'template/app.html',
             abstract: true
         })
-        .state('house-dict.dashboard', {
-            url: '/dashboard',
+        .state('house-dict.dict', {
+            url: '/dict',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('house-dict.dashboard.v1', {
-            url: '/v1',
-            templateUrl: 'views/index.html',
-            data: { pageTitle: 'Dashboard v1' },
-            resolve: {
-                service: ['$ocLazyLoad', function($ocLazyLoad) {
-                    return $ocLazyLoad.load({
-                        serie: true,
-                        files: [
-                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
-                            'js/plugin/bootstrap-datepicker/css/datepicker.css',
-                            'js/plugin/bootstrap-datepicker/css/datepicker3.css',
-                            'js/plugin/gritter/css/jquery.gritter.css',
-                            'js/plugin/gritter/js/jquery.gritter.js',
-                            'js/plugin/flot/jquery.flot.min.js',
-                            'js/plugin/flot/jquery.flot.time.min.js',
-                            'js/plugin/flot/jquery.flot.resize.min.js',
-                            'js/plugin/flot/jquery.flot.pie.min.js',
-                            'js/plugin/sparkline/jquery.sparkline.js',
-                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
-                            'js/plugin/jquery-jvectormap/jquery-jvectormap-world-mill-en.js',
-                            'js/plugin/bootstrap-datepicker/js/bootstrap-datepicker.js'
-                        ] 
-                    });
-                }]
-            }
-        })
-        .state('house-dict.dashboard.v2', {
-            url: '/v2',
+        .state('house-dict.dict.dashboard', {
+            url: '/dashboard',
             templateUrl: 'views/index_v2.html',
             data: { pageTitle: 'Dashboard v2' },
             resolve: {
@@ -74,6 +47,36 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     });
                 }]
             }
+        })
+        .state('house-dict.dict.community', {
+            url: '/community',
+            template: '<div ui-view></div>',
+            abstract: true
+        })
+        .state('house-dict.dict.community.list1', {
+            url: '/list1',
+            data: { pageTitle: 'Email Inbox v1' },
+            templateUrl: 'views/email_inbox.html'
+        })
+        .state('house-dict.dict.community.list2', {
+            url: '/list2',
+            data: { pageTitle: 'Email Inbox v1' },
+            templateUrl: 'views/email_inbox.html'
+        })
+        .state('house-dict.dict.building', {
+            url: '/building',
+            template: '<div ui-view></div>',
+            abstract: true
+        })
+        .state('house-dict.dict.building.list1', {
+            url: '/list1',
+            data: { pageTitle: 'Email Inbox v1' },
+            templateUrl: 'views/email_inbox.html'
+        })
+        .state('house-dict.dict.building.list2', {
+            url: '/list2',
+            data: { pageTitle: 'Email Inbox v1' },
+            templateUrl: 'views/email_inbox.html'
         })
         .state('house-dict.email', {
             url: '/email',
