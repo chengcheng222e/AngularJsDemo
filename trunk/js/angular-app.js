@@ -12,20 +12,20 @@ var colorAdminApp = angular.module('colorAdminApp', [
 ]);
 
 colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/app/dashboard/v2');
+    $urlRouterProvider.otherwise('/house-dict/dashboard/v2');
 
     $stateProvider
-        .state('app', {
-            url: '/app',
+        .state('house-dict', {
+            url: '/house-dict',
             templateUrl: 'template/app.html',
             abstract: true
         })
-        .state('app.dashboard', {
+        .state('house-dict.dashboard', {
             url: '/dashboard',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.dashboard.v1', {
+        .state('house-dict.dashboard.v1', {
             url: '/v1',
             templateUrl: 'views/index.html',
             data: { pageTitle: 'Dashboard v1' },
@@ -52,7 +52,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.dashboard.v2', {
+        .state('house-dict.dashboard.v2', {
             url: '/v2',
             templateUrl: 'views/index_v2.html',
             data: { pageTitle: 'Dashboard v2' },
@@ -75,22 +75,22 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.email', {
+        .state('house-dict.email', {
             url: '/email',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.email.inbox', {
+        .state('house-dict.email.inbox', {
             url: '/inbox/v1',
             data: { pageTitle: 'Email Inbox v1' },
             templateUrl: 'views/email_inbox.html'
         })
-        .state('app.email.inbox-v2', {
+        .state('house-dict.email.inbox-v2', {
             url: '/inbox/v2',
             data: { pageTitle: 'Email Inbox v2' },
             templateUrl: 'views/email_inbox_v2.html'
         })
-        .state('app.email.compose', {
+        .state('house-dict.email.compose', {
             url: '/compose',
             data: { pageTitle: 'Email Compose' },
             templateUrl: 'views/email_compose.html',
@@ -109,37 +109,37 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.email.detail', {
+        .state('house-dict.email.detail', {
             url: '/detail',
             data: { pageTitle: 'Email Detail' },
             templateUrl: 'views/email_detail.html'
         })
-        .state('app.ui', {
+        .state('house-dict.ui', {
             url: '/ui',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.ui.general', {
+        .state('house-dict.ui.general', {
             url: '/general',
             data: { pageTitle: 'UI General' },
             templateUrl: 'views/ui_general.html'
         })
-        .state('app.ui.typography', {
+        .state('house-dict.ui.typography', {
             url: '/typography',
             data: { pageTitle: 'UI Typography' },
             templateUrl: 'views/ui_typography.html'
         })
-        .state('app.ui.tabsAccordions', {
+        .state('house-dict.ui.tabsAccordions', {
             url: '/tabs-accordions',
             data: { pageTitle: 'UI Tabs & Accordions' },
             templateUrl: 'views/ui_tabs_accordions.html'
         })
-        .state('app.ui.unlimitedTabs', {
+        .state('house-dict.ui.unlimitedTabs', {
             url: '/unlimited-nav-tabs',
             data: { pageTitle: 'UI Unlimited Nav Tabs' },
             templateUrl: 'views/ui_unlimited_tabs.html'
         })
-        .state('app.ui.modalNotification', {
+        .state('house-dict.ui.modalNotification', {
             url: '/modal-notification',
             data: { pageTitle: 'UI Modal & Notification' },
             templateUrl: 'views/ui_modal_notification.html',
@@ -154,27 +154,27 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.ui.widgetBoxes', {
+        .state('house-dict.ui.widgetBoxes', {
             url: '/widget-boxes',
             data: { pageTitle: 'UI Widget Boxes' },
             templateUrl: 'views/ui_widget_boxes.html'
         })
-        .state('app.ui.mediaObject', {
+        .state('house-dict.ui.mediaObject', {
             url: '/media-object',
             data: { pageTitle: 'UI Media Object' },
             templateUrl: 'views/ui_media_object.html'
         })
-        .state('app.ui.buttons', {
+        .state('house-dict.ui.buttons', {
             url: '/buttons',
             data: { pageTitle: 'UI Buttons' },
             templateUrl: 'views/ui_buttons.html'
         })
-        .state('app.ui.icons', {
+        .state('house-dict.ui.icons', {
             url: '/font-awesome',
             data: { pageTitle: 'UI FontAwesome' },
             templateUrl: 'views/ui_icons.html'
         })
-        .state('app.ui.simpleLineIcons', {
+        .state('house-dict.ui.simpleLineIcons', {
             url: '/simple-line-icons',
             data: { pageTitle: 'UI Simple Line Icons' },
             templateUrl: 'views/ui_simple_line_icons.html',
@@ -188,7 +188,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.ui.ionicons', {
+        .state('house-dict.ui.ionicons', {
             url: '/ionicons',
             data: { pageTitle: 'UI Ionicons' },
             templateUrl: 'views/ui_ionicons.html',
@@ -202,7 +202,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.ui.tree', {
+        .state('house-dict.ui.tree', {
             url: '/tree',
             data: { pageTitle: 'UI Tree View' },
             templateUrl: 'views/ui_tree.html',
@@ -217,7 +217,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.ui.languageBarIcon', {
+        .state('house-dict.ui.languageBarIcon', {
             url: '/language-bar-icon',
             data: { pageTitle: 'UI Language Bar Icon' },
             templateUrl: 'views/ui_language_bar_icon.html',
@@ -231,17 +231,17 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.form', {
+        .state('house-dict.form', {
             url: '/form',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.form.elements', {
+        .state('house-dict.form.elements', {
             url: '/elements',
             data: { pageTitle: 'Form Elements' },
             templateUrl: 'views/form_elements.html'
         })
-        .state('app.form.plugins', {
+        .state('house-dict.form.plugins', {
             url: '/plugins',
             data: { pageTitle: 'Form Plugins' },
             templateUrl: 'views/form_plugins.html',
@@ -284,7 +284,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.form.sliderSwitcher', {
+        .state('house-dict.form.sliderSwitcher', {
             url: '/slider-switcher',
             data: { pageTitle: 'Form Slider + Switcher' },
             templateUrl: 'views/form_slider_switcher.html',
@@ -301,27 +301,27 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.form.validation', {
+        .state('house-dict.form.validation', {
             url: '/validation',
             data: { pageTitle: 'Form Validation' },
             templateUrl: 'views/form_validation.html'
         })
-        .state('app.table', {
+        .state('house-dict.table', {
             url: '/table',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.table.basic', {
+        .state('house-dict.table.basic', {
             url: '/basic',
             data: { pageTitle: 'Basic Table' },
             templateUrl: 'views/table_basic.html'
         })
-        .state('app.table.manage', {
+        .state('house-dict.table.manage', {
             url: '/manage',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.table.manage.default', {
+        .state('house-dict.table.manage.default', {
             url: '/default',
             data: { pageTitle: 'Managed Table Default' },
             templateUrl: 'views/table_manage.html',
@@ -340,7 +340,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.autofill', {
+        .state('house-dict.table.manage.autofill', {
             url: '/autofill',
             data: { pageTitle: 'Managed Table Autofill' },
             templateUrl: 'views/table_manage_autofill.html',
@@ -363,7 +363,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
             }
             
         })
-        .state('app.table.manage.buttons', {
+        .state('house-dict.table.manage.buttons', {
             url: '/buttons',
             data: { pageTitle: 'Managed Table Buttons' },
             templateUrl: 'views/table_manage_buttons.html',
@@ -389,7 +389,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.colReorder', {
+        .state('house-dict.table.manage.colReorder', {
             url: '/colreorder',
             data: { pageTitle: 'Managed Table ColReorder' },
             templateUrl: 'views/table_manage_colreorder.html',
@@ -410,7 +410,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.fixedColumns', {
+        .state('house-dict.table.manage.fixedColumns', {
             url: '/fixed-column',
             data: { pageTitle: 'Managed Table Fixed Columns' },
             templateUrl: 'views/table_manage_fixed_columns.html',
@@ -431,7 +431,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.fixedHeader', {
+        .state('house-dict.table.manage.fixedHeader', {
             url: '/fixed-header',
             data: { pageTitle: 'Managed Table Fixed Header' },
             templateUrl: 'views/table_manage_fixed_header.html',
@@ -452,7 +452,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.keyTable', {
+        .state('house-dict.table.manage.keyTable', {
             url: '/keytable',
             data: { pageTitle: 'Managed Table KeyTable' },
             templateUrl: 'views/table_manage_keytable.html',
@@ -473,7 +473,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.responsive', {
+        .state('house-dict.table.manage.responsive', {
             url: '/responsive',
             data: { pageTitle: 'Managed Table Responsive' },
             templateUrl: 'views/table_manage_responsive.html',
@@ -492,7 +492,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.rowReorder', {
+        .state('house-dict.table.manage.rowReorder', {
             url: '/rowreorder',
             data: { pageTitle: 'Managed Table RowReorder' },
             templateUrl: 'views/table_manage_rowreorder.html',
@@ -513,7 +513,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.scroller', {
+        .state('house-dict.table.manage.scroller', {
             url: '/scroller',
             data: { pageTitle: 'Managed Table Scroller' },
             templateUrl: 'views/table_manage_scroller.html',
@@ -534,7 +534,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.select', {
+        .state('house-dict.table.manage.select', {
             url: '/select',
             data: { pageTitle: 'Managed Table Select' },
             templateUrl: 'views/table_manage_select.html',
@@ -555,7 +555,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.table.manage.combine', {
+        .state('house-dict.table.manage.combine', {
             url: '/combine',
             data: { pageTitle: 'Managed Table Extension Combination' },
             templateUrl: 'views/table_manage_combine.html',
@@ -591,12 +591,12 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.chart', {
+        .state('house-dict.chart', {
             url: '/chart',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.chart.flot', {
+        .state('house-dict.chart.flot', {
             url: '/flot',
             data: { pageTitle: 'Flot Chart' },
             templateUrl: 'views/chart_flot.html',
@@ -619,7 +619,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.chart.morris', {
+        .state('house-dict.chart.morris', {
             url: '/morris',
             data: { pageTitle: 'Morris Chart' },
             templateUrl: 'views/chart_morris.html',
@@ -635,7 +635,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.chart.js', {
+        .state('house-dict.chart.js', {
             url: '/chart-js',
             data: { pageTitle: 'Chart JS' },
             templateUrl: 'views/chart_js.html',
@@ -652,7 +652,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.chart.d3', {
+        .state('house-dict.chart.d3', {
             url: '/chart-d3',
             data: { pageTitle: 'Chart d3' },
             templateUrl: 'views/chart_d3.html',
@@ -669,7 +669,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.calendar', {
+        .state('house-dict.calendar', {
             url: '/calendar',
             data: { pageTitle: 'Calendar' },
             templateUrl: 'views/calendar.html',
@@ -684,12 +684,12 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.map', {
+        .state('house-dict.map', {
             url: '/map',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.map.vector', {
+        .state('house-dict.map.vector', {
             url: '/vector',
             data: { pageTitle: 'Vector Map' },
             templateUrl: 'views/map_vector.html',
@@ -706,17 +706,17 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.map.google', {
+        .state('house-dict.map.google', {
             url: '/google',
             data: { pageTitle: 'Google Map' },
             templateUrl: 'views/map_google.html'
         })
-        .state('app.gallery', {
+        .state('house-dict.gallery', {
             url: '/gallery',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.gallery.v1', {
+        .state('house-dict.gallery.v1', {
             url: '/v1',
             data: { pageTitle: 'Gallery V1' },
             templateUrl: 'views/gallery.html',
@@ -734,7 +734,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.gallery.v2', {
+        .state('house-dict.gallery.v2', {
             url: '/v2',
             data: { pageTitle: 'Gallery V2' },
             templateUrl: 'views/gallery_v2.html',
@@ -749,37 +749,37 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.options', {
+        .state('house-dict.options', {
             url: '/options',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.options.pageBlank', {
+        .state('house-dict.options.pageBlank', {
             url: '/blank',
             data: { pageTitle: 'Blank Page' },
             templateUrl: 'views/page_blank.html'
         })
-        .state('app.options.pageWithFooter', {
+        .state('house-dict.options.pageWithFooter', {
             url: '/with-footer',
             data: { pageTitle: 'Page with Footer' },
             templateUrl: 'views/page_with_footer.html'
         })
-        .state('app.options.pageWithoutSidebar', {
+        .state('house-dict.options.pageWithoutSidebar', {
             url: '/without-sidebar',
             data: { pageTitle: 'Page without Sidebar' },
             templateUrl: 'views/page_without_sidebar.html'
         })
-        .state('app.options.pageWithRightSidebar', {
+        .state('house-dict.options.pageWithRightSidebar', {
             url: '/right-sidebar',
             data: { pageTitle: 'Page with Right Sidebar' },
             templateUrl: 'views/page_with_right_sidebar.html'
         })
-        .state('app.options.pageWithMinifiedSidebar', {
+        .state('house-dict.options.pageWithMinifiedSidebar', {
             url: '/minified-sidebar',
             data: { pageTitle: 'Page with Minified Sidebar' },
             templateUrl: 'views/page_with_minified_sidebar.html'
         })
-        .state('app.options.pageWithTwoSidebar', {
+        .state('house-dict.options.pageWithTwoSidebar', {
             url: '/two-sidebar',
             data: { pageTitle: 'Page with Two Sidebar' },
             templateUrl: 'views/page_with_two_sidebar.html',
@@ -794,72 +794,72 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 }]
             }
         })
-        .state('app.options.pageFullHeightContent', {
+        .state('house-dict.options.pageFullHeightContent', {
             url: '/full-height-content',
             data: { pageTitle: 'Full Height Content' },
             templateUrl: 'views/page_full_height.html'
         })
-        .state('app.options.pageWithWideSidebar', {
+        .state('house-dict.options.pageWithWideSidebar', {
             url: '/wide-sidebar',
             data: { pageTitle: 'Page with Wide Sidebar' },
             templateUrl: 'views/page_with_wide_sidebar.html'
         })
-        .state('app.options.pageWithLightSidebar', {
+        .state('house-dict.options.pageWithLightSidebar', {
             url: '/light-sidebar',
             data: { pageTitle: 'Page with Light Sidebar' },
             templateUrl: 'views/page_with_light_sidebar.html'
         })
-        .state('app.options.pageWithMegaMenu', {
+        .state('house-dict.options.pageWithMegaMenu', {
             url: '/light-sidebar',
             data: { pageTitle: 'Page with Mega Menu' },
             templateUrl: 'views/page_with_mega_menu.html'
         })
-        .state('app.options.pageWithTopMenu', {
+        .state('house-dict.options.pageWithTopMenu', {
             url: '/top-menu',
             data: { pageTitle: 'Page with Top Menu' },
             templateUrl: 'views/page_with_top_menu.html'
         })
-        .state('app.options.pageWithMixedMenu', {
+        .state('house-dict.options.pageWithMixedMenu', {
             url: '/mixed-menu',
             data: { pageTitle: 'Page with Mixed Menu' },
             templateUrl: 'views/page_with_mixed_menu.html'
         })
-        .state('app.options.pageWithBoxedLayout', {
+        .state('house-dict.options.pageWithBoxedLayout', {
             url: '/boxed-layout',
             data: { pageTitle: 'Page with Boxed Layout' },
             templateUrl: 'views/page_with_boxed_layout.html'
         })
-        .state('app.options.pageWithBoxedMixedMenu', {
+        .state('house-dict.options.pageWithBoxedMixedMenu', {
             url: '/boxed-mixed-menu',
             data: { pageTitle: 'Page with Mixed Menu Boxed Layout' },
             templateUrl: 'views/page_boxed_layout_with_mixed_menu.html'
         })
-        .state('app.options.pageWithTransparentSidebar', {
+        .state('house-dict.options.pageWithTransparentSidebar', {
             url: '/transparent-sidebar',
             data: { pageTitle: 'Page with Transparent Sidebar' },
             templateUrl: 'views/page_with_transparent_sidebar.html'
         })
-        .state('app.extra', {
+        .state('house-dict.extra', {
             url: '/extra',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.extra.timeline', {
+        .state('house-dict.extra.timeline', {
             url: '/timeline',
             data: { pageTitle: 'Timeline' },
             templateUrl: 'views/extra_timeline.html'
         })
-        .state('app.extra.searchResults', {
+        .state('house-dict.extra.searchResults', {
             url: '/search-results',
             data: { pageTitle: 'Search Results' },
             templateUrl: 'views/extra_search_results.html'
         })
-        .state('app.extra.invoice', {
+        .state('house-dict.extra.invoice', {
             url: '/invoice',
             data: { pageTitle: 'Invoice' },
             templateUrl: 'views/extra_invoice.html'
         })
-        .state('app.extra.profile', {
+        .state('house-dict.extra.profile', {
             url: '/profile',
             data: { pageTitle: 'Profile' },
             templateUrl: 'views/extra_profile.html'
@@ -915,12 +915,12 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
             data: { pageTitle: 'Register V3' },
             templateUrl: 'views/register_v3.html'
         })
-        .state('app.helper', {
+        .state('house-dict.helper', {
             url: '/helper',
             template: '<div ui-view></div>',
             abstract: true
         })
-        .state('app.helper.css', {
+        .state('house-dict.helper.css', {
             url: '/css',
             data: { pageTitle: 'Predefined CSS Classes' },
             templateUrl: 'views/helper_css.html'
