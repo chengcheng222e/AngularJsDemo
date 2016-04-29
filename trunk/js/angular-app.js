@@ -34,19 +34,19 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
-                            'assets/plugins/bootstrap-datepicker/css/datepicker.css',
-                            'assets/plugins/bootstrap-datepicker/css/datepicker3.css',
-                            'assets/plugins/gritter/css/jquery.gritter.css',
-                            'assets/plugins/gritter/js/jquery.gritter.js',
-                            'assets/plugins/flot/jquery.flot.min.js',
-                            'assets/plugins/flot/jquery.flot.time.min.js',
-                            'assets/plugins/flot/jquery.flot.resize.min.js',
-                            'assets/plugins/flot/jquery.flot.pie.min.js',
-                            'assets/plugins/sparkline/jquery.sparkline.js',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js',
-                            'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js'
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
+                            'js/plugin/bootstrap-datepicker/css/datepicker.css',
+                            'js/plugin/bootstrap-datepicker/css/datepicker3.css',
+                            'js/plugin/gritter/css/jquery.gritter.css',
+                            'js/plugin/gritter/js/jquery.gritter.js',
+                            'js/plugin/flot/jquery.flot.min.js',
+                            'js/plugin/flot/jquery.flot.time.min.js',
+                            'js/plugin/flot/jquery.flot.resize.min.js',
+                            'js/plugin/flot/jquery.flot.pie.min.js',
+                            'js/plugin/sparkline/jquery.sparkline.js',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-world-mill-en.js',
+                            'js/plugin/bootstrap-datepicker/js/bootstrap-datepicker.js'
                         ] 
                     });
                 }]
@@ -60,16 +60,16 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
-                            'assets/plugins/bootstrap-calendar/css/bootstrap_calendar.css',
-                            'assets/plugins/gritter/css/jquery.gritter.css',
-                            'assets/plugins/morris/morris.css',
-                            'assets/plugins/morris/raphael.min.js',
-                            'assets/plugins/morris/morris.js',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-world-merc-en.js',
-                            'assets/plugins/bootstrap-calendar/js/bootstrap_calendar.min.js',
-                            'assets/plugins/gritter/js/jquery.gritter.js'
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
+                            'js/plugin/bootstrap-calendar/css/bootstrap_calendar.css',
+                            'js/plugin/gritter/css/jquery.gritter.css',
+                            'js/plugin/morris/morris.css',
+                            'js/plugin/morris/raphael.min.js',
+                            'js/plugin/morris/morris.js',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-world-merc-en.js',
+                            'js/plugin/bootstrap-calendar/js/bootstrap_calendar.min.js',
+                            'js/plugin/gritter/js/jquery.gritter.js'
                         ] 
                     });
                 }]
@@ -99,11 +99,11 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/jquery-tag-it/css/jquery.tagit.css',
-                            'assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css',
-                            'assets/plugins/jquery-tag-it/js/tag-it.min.js',
-                            'assets/plugins/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js',
-                            'assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js'
+                            'js/plugin/jquery-tag-it/css/jquery.tagit.css',
+                            'js/plugin/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css',
+                            'js/plugin/jquery-tag-it/js/tag-it.min.js',
+                            'js/plugin/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js',
+                            'js/plugin/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js'
                         ]
                     })
                 }]
@@ -147,8 +147,8 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/gritter/css/jquery.gritter.css',
-                            'assets/plugins/gritter/js/jquery.gritter.js'
+                            'js/plugin/gritter/css/jquery.gritter.css',
+                            'js/plugin/gritter/js/jquery.gritter.js'
                         ] 
                     });
                 }]
@@ -182,7 +182,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/simple-line-icons/simple-line-icons.css'
+                            'js/plugin/simple-line-icons/simple-line-icons.css'
                         ] 
                     });
                 }]
@@ -196,7 +196,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/ionicons/css/ionicons.min.css'
+                            'js/plugin/ionicons/css/ionicons.min.css'
                         ] 
                     });
                 }]
@@ -210,8 +210,8 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/jstree/dist/themes/default/style.min.css',
-                            'assets/plugins/jstree/dist/jstree.min.js'
+                            'js/plugin/jstree/dist/themes/default/style.min.css',
+                            'js/plugin/jstree/dist/jstree.min.js'
                         ]
                     });
                 }]
@@ -225,7 +225,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/flag-icon/css/flag-icon.css'
+                            'js/plugin/flag-icon/css/flag-icon.css'
                         ]
                     });
                 }]
@@ -250,35 +250,35 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/bootstrap-datepicker/css/datepicker.css',
-                            'assets/plugins/bootstrap-datepicker/css/datepicker3.css',
-                            'assets/plugins/ionRangeSlider/css/ion.rangeSlider.css',
-                            'assets/plugins/ionRangeSlider/css/ion.rangeSlider.skinNice.css',
-                            'assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css',
-                            'assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
-                            'assets/plugins/password-indicator/css/password-indicator.css',
-                            'assets/plugins/bootstrap-combobox/css/bootstrap-combobox.css',
-                            'assets/plugins/bootstrap-select/bootstrap-select.min.css',
-                            'assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css',
-                            'assets/plugins/jquery-tag-it/css/jquery.tagit.css',
-                            'assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',
-                            'assets/plugins/select2/dist/css/select2.min.css',
-                            'assets/plugins/bootstrap-eonasdan-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
-                            'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                            'assets/plugins/ionRangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js',
-                            'assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js',
-                            'assets/plugins/masked-input/masked-input.min.js',
-                            'assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
-                            'assets/plugins/password-indicator/js/password-indicator.js',
-                            'assets/plugins/bootstrap-combobox/js/bootstrap-combobox.js',
-                            'assets/plugins/bootstrap-select/bootstrap-select.min.js',
-                            'assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js',
-                            'assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-typeahead.js',
-                            'assets/plugins/jquery-tag-it/js/tag-it.min.js',
-                            'assets/plugins/bootstrap-daterangepicker/moment.js',
-                            'assets/plugins/bootstrap-daterangepicker/daterangepicker.js',
-                            'assets/plugins/select2/dist/js/select2.min.js',
-                            'assets/plugins/bootstrap-eonasdan-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
+                            'js/plugin/bootstrap-datepicker/css/datepicker.css',
+                            'js/plugin/bootstrap-datepicker/css/datepicker3.css',
+                            'js/plugin/ionRangeSlider/css/ion.rangeSlider.css',
+                            'js/plugin/ionRangeSlider/css/ion.rangeSlider.skinNice.css',
+                            'js/plugin/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css',
+                            'js/plugin/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
+                            'js/plugin/password-indicator/css/password-indicator.css',
+                            'js/plugin/bootstrap-combobox/css/bootstrap-combobox.css',
+                            'js/plugin/bootstrap-select/bootstrap-select.min.css',
+                            'js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.css',
+                            'js/plugin/jquery-tag-it/css/jquery.tagit.css',
+                            'js/plugin/bootstrap-daterangepicker/daterangepicker-bs3.css',
+                            'js/plugin/select2/dist/css/select2.min.css',
+                            'js/plugin/bootstrap-eonasdan-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
+                            'js/plugin/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                            'js/plugin/ionRangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js',
+                            'js/plugin/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js',
+                            'js/plugin/masked-input/masked-input.min.js',
+                            'js/plugin/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
+                            'js/plugin/password-indicator/js/password-indicator.js',
+                            'js/plugin/bootstrap-combobox/js/bootstrap-combobox.js',
+                            'js/plugin/bootstrap-select/bootstrap-select.min.js',
+                            'js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js',
+                            'js/plugin/bootstrap-tagsinput/bootstrap-tagsinput-typeahead.js',
+                            'js/plugin/jquery-tag-it/js/tag-it.min.js',
+                            'js/plugin/bootstrap-daterangepicker/moment.js',
+                            'js/plugin/bootstrap-daterangepicker/daterangepicker.js',
+                            'js/plugin/select2/dist/js/select2.min.js',
+                            'js/plugin/bootstrap-eonasdan-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
                         ] 
                     });
                 }]
@@ -292,10 +292,10 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/switchery/switchery.min.css',
-                            'assets/plugins/powerange/powerange.min.css',
-                            'assets/plugins/switchery/switchery.min.js',
-                            'assets/plugins/powerange/powerange.min.js'
+                            'js/plugin/switchery/switchery.min.css',
+                            'js/plugin/powerange/powerange.min.css',
+                            'js/plugin/switchery/switchery.min.js',
+                            'js/plugin/powerange/powerange.min.js'
                         ] 
                     });
                 }]
@@ -330,11 +330,11 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -349,14 +349,14 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js',
-                            'assets/plugins/DataTables/extensions/AutoFill/js/autoFill.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js',
+                            'js/plugin/DataTables/extensions/AutoFill/js/autoFill.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -372,18 +372,18 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/dataTables.buttons.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.print.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.flash.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.html5.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.colVis.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/dataTables.buttons.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.print.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.flash.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.html5.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.colVis.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -398,13 +398,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -419,13 +419,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -440,13 +440,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -461,13 +461,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -482,11 +482,11 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -501,13 +501,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -522,13 +522,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Scroller/js/dataTables.scroller.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Scroller/js/dataTables.scroller.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -543,13 +543,13 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Select/css/select.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Select/js/dataTables.select.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js'
                         ]
                     });
                 }]
@@ -564,28 +564,28 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css',
-                            'assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css',
-                            'assets/plugins/DataTables/media/js/jquery.dataTables.js',
-                            'assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/dataTables.buttons.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.print.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.flash.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.html5.min.js',
-                            'assets/plugins/DataTables/extensions/Buttons/js/buttons.colVis.min.js',
-                            'assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js',
-                            'assets/plugins/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js',
-                            'assets/plugins/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js',
-                            'assets/plugins/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js',
-                            'assets/plugins/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js',
-                            'assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js'
+                            'js/plugin/DataTables/media/css/dataTables.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css',
+                            'js/plugin/DataTables/extensions/Select/css/select.bootstrap.min.css',
+                            'js/plugin/DataTables/media/js/jquery.dataTables.js',
+                            'js/plugin/DataTables/media/js/dataTables.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/dataTables.buttons.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.print.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.flash.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.html5.min.js',
+                            'js/plugin/DataTables/extensions/Buttons/js/buttons.colVis.min.js',
+                            'js/plugin/DataTables/extensions/Responsive/js/dataTables.responsive.min.js',
+                            'js/plugin/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js',
+                            'js/plugin/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js',
+                            'js/plugin/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js',
+                            'js/plugin/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js',
+                            'js/plugin/DataTables/extensions/Select/js/dataTables.select.min.js'
                         ]
                     });
                 }]
@@ -606,14 +606,14 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                         serie: true,
                         name: 'angular-flot',
                         files: [
-                            'assets/plugins/flot/jquery.flot.min.js',
-                            'assets/plugins/flot/jquery.flot.time.min.js',
-                            'assets/plugins/flot/jquery.flot.resize.min.js',
-                            'assets/plugins/flot/jquery.flot.pie.min.js',
-                            'assets/plugins/flot/jquery.flot.stack.min.js',
-                            'assets/plugins/flot/jquery.flot.crosshair.min.js',
-                            'assets/plugins/flot/jquery.flot.categories.js',
-                            'assets/plugins/flot/angular-flot.js',
+                            'js/plugin/flot/jquery.flot.min.js',
+                            'js/plugin/flot/jquery.flot.time.min.js',
+                            'js/plugin/flot/jquery.flot.resize.min.js',
+                            'js/plugin/flot/jquery.flot.pie.min.js',
+                            'js/plugin/flot/jquery.flot.stack.min.js',
+                            'js/plugin/flot/jquery.flot.crosshair.min.js',
+                            'js/plugin/flot/jquery.flot.categories.js',
+                            'js/plugin/flot/angular-flot.js',
                         ]
                     })
                 }]
@@ -627,9 +627,9 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/morris/morris.css',
-                            'assets/plugins/morris/raphael.min.js',
-                            'assets/plugins/morris/morris.js'
+                            'js/plugin/morris/morris.css',
+                            'js/plugin/morris/raphael.min.js',
+                            'js/plugin/morris/morris.js'
                         ]
                     })
                 }]
@@ -645,8 +645,8 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                         serie: true,
                         name: 'angles',
                         files: [
-                            'assets/plugins/chart-js/chart.js',
-                            'assets/plugins/chart-js/angular/angles.js'
+                            'js/plugin/chart-js/chart.js',
+                            'js/plugin/chart-js/angular/angles.js'
                         ]
                     })
                 }]
@@ -661,9 +661,9 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/nvd3/build/nv.d3.css',
+                            'js/plugin/nvd3/build/nv.d3.css',
                             'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js',
-                            'assets/plugins/nvd3/build/nv.d3.js'
+                            'js/plugin/nvd3/build/nv.d3.js'
                         ]
                     })
                 }]
@@ -677,8 +677,8 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/fullcalendar/fullcalendar/fullcalendar.css',
-                            'assets/plugins/fullcalendar/fullcalendar/fullcalendar.js'
+                            'js/plugin/fullcalendar/fullcalendar/fullcalendar.css',
+                            'js/plugin/fullcalendar/fullcalendar/fullcalendar.js'
                         ]
                     })
                 }]
@@ -698,9 +698,9 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
-                            'assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js'
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.css',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js',
+                            'js/plugin/jquery-jvectormap/jquery-jvectormap-world-mill-en.js'
                         ]
                     })
                 }]
@@ -725,10 +725,10 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/isotope/isotope.css',
-                            'assets/plugins/lightbox/css/lightbox.css',
-                            'assets/plugins/isotope/jquery.isotope.min.js',
-                            'assets/plugins/lightbox/js/lightbox-2.6.min.js'
+                            'js/plugin/isotope/isotope.css',
+                            'js/plugin/lightbox/css/lightbox.css',
+                            'js/plugin/isotope/jquery.isotope.min.js',
+                            'js/plugin/lightbox/js/lightbox-2.6.min.js'
                         ]
                     })
                 }]
@@ -743,7 +743,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                     return $ocLazyLoad.load({
                         serie: true,
                         files: [
-                            'assets/plugins/superbox/js/superbox.js'
+                            'js/plugin/superbox/js/superbox.js'
                         ]
                     })
                 }]
@@ -787,8 +787,8 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/sparkline/jquery.sparkline.js',
-                            'assets/plugins/jquery-knob/js/jquery.knob.js'
+                            'js/plugin/sparkline/jquery.sparkline.js',
+                            'js/plugin/jquery-knob/js/jquery.knob.js'
                         ]
                     })
                 }]
@@ -872,9 +872,9 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         files: [
-                            'assets/plugins/jquery.countdown/jquery.countdown.css',
-                            'assets/plugins/jquery.countdown/jquery.plugin.js',
-                            'assets/plugins/jquery.countdown/jquery.countdown.js'
+                            'js/plugin/jquery.countdown/jquery.countdown.css',
+                            'js/plugin/jquery.countdown/jquery.plugin.js',
+                            'js/plugin/jquery.countdown/jquery.countdown.js'
                         ]
                     })
                 }]

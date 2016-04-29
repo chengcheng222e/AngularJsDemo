@@ -5201,7 +5201,7 @@ ul.tagit.inverse li.tagit-choice .tagit-close:focus .ui-icon-close:before {
     position: absolute;
     top: 25px;
     right: 25px;
-    background: url(assets/plugins/superbox/img/close.gif) no-repeat center center;
+    background: url(js/plugin/superbox/img/close.gif) no-repeat center center;
     width: 35px;
     height: 35px;
 }
