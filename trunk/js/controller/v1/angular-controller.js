@@ -651,16 +651,16 @@ colorAdminApp.controller('dashboardV2Controller', function($scope, $rootScope, $
 
     /* Gritter Notification
     ------------------------- */
-    setTimeout(function() {
-        $.gritter.add({
-            title: 'Welcome back, Admin!',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus ut lectus rutrum placerat.',
-            image: 'img/user-14.jpg',
-            sticky: true,
-            time: '',
-            class_name: 'my-sticky-class'
-        });
-    }, 1000);
+    //setTimeout(function() {
+    //    $.gritter.add({
+    //        title: 'Welcome back, Admin!',
+    //        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus ut lectus rutrum placerat.',
+    //        image: 'img/user-14.jpg',
+    //        sticky: true,
+    //        time: '',
+    //        class_name: 'my-sticky-class'
+    //    });
+    //}, 1000);
 });
 
 

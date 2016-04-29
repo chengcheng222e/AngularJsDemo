@@ -27,7 +27,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
         })
         .state('house-dict.dict.dashboard', {
             url: '/dashboard',
-            templateUrl: 'views/index_v2.html',
+            templateUrl: 'views/community/dashboard.html',
             data: { pageTitle: 'Dashboard v2' },
             resolve: {
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
