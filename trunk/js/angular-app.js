@@ -28,7 +28,7 @@ colorAdminApp.config(['$stateProvider', '$urlRouterProvider', function($statePro
         .state('house-dict.dict.dashboard', {
             url: '/dashboard',
             templateUrl: 'views/community/dashboard.html',
-            data: { pageTitle: 'Dashboard v2' },
+            data: { pageTitle: '全国概况' },
             resolve: {
                 service: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
